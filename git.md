@@ -98,6 +98,24 @@ git-annex: ugyes kezelese a nagy meretu binaris file-oknak (nem lassit feleslege
 remote repository masolasa uj localba
 ### remote
 remote server hozzaadasa meglevo local repohoz
+### push / pull
+valtozasok feltolasa / leszedese remote-rol<br>
+`git push origin master:master` - sajat master:remote master
+### fetch
+a Local es a Remote indexet szinkronba hozza, anelkul, hogy `merge`-et probalna vegrehajtani.<br>
+pull helyett:
+```
+git fetch
+git reset --hard origin/master
+```
+
+### bisect
+binaris keresessel megkeresi, hogy hol van az a `commit`, amely eltori a tesztjeimet
+### interactive rebase
+history changing<br>
+`git rebase -i <patch_hash>`<br>
+- r: rewording, commit message megvaltoztatasa
+  megvaltozik a fa, ezert ilyenkor `--force`-olni kell a push-t
 
 ## Seged
 ### .gitkeep
