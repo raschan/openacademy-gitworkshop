@@ -75,6 +75,7 @@ lehet konyvtarszerkezet szeruen is
 valtas az egyes branch-ek kozott
 git checkout -B <name> - uj `branch` letrehozasa, es valtas ra
 ###reset
+a `HEAD` pointert rakosgatjuk a gitfa egyik pontjabol a masikba (a valtoztatasok megmaradnak)
 ##Seged
 ###.gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
