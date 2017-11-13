@@ -71,3 +71,7 @@ torli az adott elemet a `stash`-bol
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
 
 #Code review tools
+
+#Erdekessegek
+- ls -lR - rekurziv konyvtar listaza
+- git log --oneline - rovidebb lista a logrol
