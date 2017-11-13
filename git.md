@@ -119,6 +119,15 @@ history changing<br>
 - tobb commitbol egy commit
 - egy commitbol tobb commit
 
+## Hook-ok
+eleg sok van, 3 lenyegesebbet kiemelunk
+### pre-commit
+commit elott van (pl testek futasa)
+### commit-msg
+commit message mentese utan fut le, de meg mindig a commit elott (formai kovetelmenyek ellenorzese)
+### post-receive
+Local Indexbol felment a Remote Indexbe, ha minden lefutott, akkor fut ez le (pl Jenkins futasanak inditasa)
+
 ## Seged
 ### .gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
