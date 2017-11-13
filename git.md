@@ -1,4 +1,5 @@
-Git - easy to nightmare lvl - Szasz Zoltan
+# Git - easy to nightmare lvl - Szasz Zoltan
+https://devopsoktatas.hu
 
 # SCM in general
 ## Source Code Management
@@ -128,6 +129,12 @@ commit message mentese utan fut le, de meg mindig a commit elott (formai kovetel
 ### post-receive
 Local Indexbol felment a Remote Indexbe, ha minden lefutott, akkor fut ez le (pl Jenkins futasanak inditasa)
 
+## Git tools
+### gitk
+### git gui
+sor szinten megadhato, hogy mi keruljon be a `commit`-ba
+### tig
+
 ## Seged
 ### .gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
@@ -135,6 +142,11 @@ seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat 
 ami itt van, azt a git figyelmen kivul fogja hagyni
 
 # Code review tools
+## GitHub (Saas)
+## GitLab (Saas/self-hosted)
+## Gerrit (self-hosted)
+## Phabricator (self-hosted)
+## Crucible (Saas/self-hosted)
 
 # Erdekessegek
 - ls -lR - rekurziv konyvtar listaza
