@@ -2,7 +2,7 @@ Git - easy to nightmare lvl - Szasz Zoltan
 
 # SCM in general
 ## Source Code Management
-regen: ftp-n keresztul kreativ nevezektan (*-final-release-beta-2....).
+regen: ftp-n keresztul kreativ nevezektan (*-final-release-beta-2....)<br>
 mit adnak a verzio kezelok?
   - ha hibaztunk, konnyu visszavonhatosag
   - nem veszik el a forraskod, backup (nem csak nalunk van meg, hanem egy tavoli repoban is)
@@ -17,19 +17,19 @@ mit tartsunk repoban?
   - asset-eket
 
 # Git
-10 eve irta meg Linus Torvalds, Linux kernel tarolasara jott letre.
+10 eve irta meg Linus Torvalds, Linux kernel tarolasara jott letre.<br>
 Elosztott verzio-kezelo rendszer
-  nalunk is verzio kezelt a kod (megvan a history)
-  Working copy - ezen dolgozunk
-  Local index
-  Remote-ok
+  - nalunk is verzio kezelt a kod (megvan a history)
+  - Working copy - ezen dolgozunk
+  - Local index
+  - Remote-ok
+  - a kod egy bizonyos allapota mindenkinel meglesz
 
-  a kod egy bizonyos allapota mindenkinel meglesz
-Branch-ek - elagazasok adott kod allapotbol, pl uj feature-ok, vagy bug-fix-ek
-Az egyes branchek egyes allapotai tag-elhetok (kiemelt, konnyen celozhato commit-ok)
-elosegiti a review-t
-conflict feloldasok
-atirhato a tortenelem
+Branch-ek - elagazasok adott kod allapotbol, pl uj feature-ok, vagy bug-fix-ek<br>
+Az egyes branchek egyes allapotai tag-elhetok (kiemelt, konnyen celozhato commit-ok)<br>
+elosegiti a review-t<br>
+conflict feloldasok<br>
+atirhato a tortenelem<br>
 
 # Git commands
 
@@ -39,11 +39,11 @@ repo inditasa
 ### status
 repo valtozasai a legutolso commit ota
 ### add
-file-ok hozzaadasa a `tracked files`-hoz
+file-ok hozzaadasa a `tracked files`-hoz<br>
 * vagy . hasznalatval minden file / folder-t hozza tudok addni a repohoz, ami meg nincs hozzaadva
 ### commit
-hozzaadas a `Local Index`-hez, innentol kezdve koveti a verzio kezelo
-minden `commit` kap egy sajat hash-et, amivel lehet ra hivatkozni a kesobbiekben. Ez mindig egyedi, es tobbnyire nem valtozik
+hozzaadas a `Local Index`-hez, innentol kezdve koveti a verzio kezelo<br>
+minden `commit` kap egy sajat hash-et, amivel lehet ra hivatkozni a kesobbiekben. Ez mindig egyedi, es tobbnyire nem valtozik<br>
 `--amend`: nem egy ujabb keszul, hanem hozzaadja az elozo `commit`-hoz, a message szerkesztesenek a lehetosegevel
 ### log
 visszanezni az aktualis `history`-t
@@ -61,29 +61,29 @@ megmutatja, hogy adott `stash`-ben mi van
 ### stash show <name> -p
 megmutatja, hogy mi van az adott `stash`-ben, es azt is, hogy mi valtozott
 ### stash apply / pop <name>
-pop: a legfelso / megnevezett `elem` visszaallitasa a `stash`-bol, majd torlese onnan
+pop: a legfelso / megnevezett `elem` visszaallitasa a `stash`-bol, majd torlese onnan<br>
 apply: a legfelso / megnevezett `elem` visszaallitasa a `stash`-bol, az elem bent marad a `stash`-ben
 ### stash drop <name>
 torli az adott elemet a `stash`-bol
 
 ## Branching
 ### branch
-uj `branch` letrehozasa az aktuallis allasbol
-a nev tetszoleges lehet, konvecio szerint csak alphanumerikus ([a-zA-Z0-9])
+uj `branch` letrehozasa az aktuallis allasbol<br>
+a nev tetszoleges lehet, konvecio szerint csak alphanumerikus ([a-zA-Z0-9])<br>
 lehet konyvtarszerkezet szeruen is
 ### checkout
-valtas az egyes branch-ek kozott
+valtas az egyes branch-ek kozott<br>
 git checkout -B <name> - uj `branch` letrehozasa, es valtas ra
 ### reset
-a `HEAD` pointert rakosgatjuk a gitfa egyik pontjabol a masikba (a valtoztatasok megmaradnak)
+a `HEAD` pointert rakosgatjuk a gitfa egyik pontjabol a masikba (a valtoztatasok megmaradnak)<br>
 `git reset --hard` eldobja a valtozasokat
 
 ## Merge vs Rebase
 gyakori `merge`-eles eseten kisebbek lesznek a `conflict`-jaim, amiket konnyebb lesz megoldani
 ### merge
-strategia fuggo, hogy fog tortenni az agak osszefuzese, tobbnyire idorendben osszefuzi oket a tool
-hatrany: osszevissza lesz sok ag osszefesulese utan, hogy mi merre hogyan
---fast-forward: idobelyeg szerinti osszefesules
+strategia fuggo, hogy fog tortenni az agak osszefuzese, tobbnyire idorendben osszefuzi oket a tool<br>
+hatrany: osszevissza lesz sok ag osszefesulese utan, hogy mi merre hogyan<br>
+--fast-forward: idobelyeg szerinti osszefesules<br>
 --no-ff: az eredeti elagazas utan viszi vissza a kulonbozo branch-eket. Erosen ajanlot egy rebase a merge elott. megmarad a history-ban, hogy ez egy kulon feature volt
 ### mergetool
 ### rebase
