@@ -76,6 +76,19 @@ valtas az egyes branch-ek kozott
 git checkout -B <name> - uj `branch` letrehozasa, es valtas ra
 ###reset
 a `HEAD` pointert rakosgatjuk a gitfa egyik pontjabol a masikba (a valtoztatasok megmaradnak)
+`git reset --hard` eldobja a valtozasokat
+
+##Merge vs Rebase
+###merge
+strategia fuggo, hogy fog tortenni az agak osszefuzese, tobbnyire idorendben osszefuzi oket a tool
+hatrany: osszevissza lesz sok ag osszefesulese utan, hogy mi merre hogyan
+--fast-forward: idobelyeg szerinti osszefesules
+--noff: az eredeti elagazas utan viszi vissza a kulonbozo branch-eket. Erosen ajanlot egy rebase a merge elott
+###mergetool
+###rebase
+a `feature` agat leveszi az eredeti helyerol, majd a cel ag vegere fuzi azokat
+###cherry-pick
+
 ##Seged
 ###.gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
