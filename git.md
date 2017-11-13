@@ -116,6 +116,8 @@ history changing<br>
 `git rebase -i <patch_hash>`<br>
 - r: rewording, commit message megvaltoztatasa
   megvaltozik a fa, ezert ilyenkor `--force`-olni kell a push-t
+- tobb commitbol egy commit
+- egy commitbol tobb commit
 
 ## Seged
 ### .gitkeep
