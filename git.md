@@ -2,7 +2,7 @@ Git - easy to nightmare lvl - Szasz Zoltan
 
 # SCM in general
 ## Source Code Management
-regen: ftp-n keresztul kreativ nevezektan (*-final-release-beta-2....)
+regen: ftp-n keresztul kreativ nevezektan (*-final-release-beta-2....).
 mit adnak a verzio kezelok?
   - ha hibaztunk, konnyu visszavonhatosag
   - nem veszik el a forraskod, backup (nem csak nalunk van meg, hanem egy tavoli repoban is)
