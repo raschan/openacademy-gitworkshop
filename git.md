@@ -66,8 +66,36 @@ apply: a legfelso / megnevezett `elem` visszaallitasa a `stash`-bol, az elem ben
 ###stash drop <name>
 torli az adott elemet a `stash`-bol
 
+##Branching
+###branch
+uj `branch` letrehozasa az aktuallis allasbol
+a nev tetszoleges lehet, konvecio szerint csak alphanumerikus ([a-zA-Z0-9])
+lehet konyvtarszerkezet szeruen is
+###checkout
+valtas az egyes branch-ek kozott
+git checkout -B <name> - uj `branch` letrehozasa, es valtas ra
+###reset
+a `HEAD` pointert rakosgatjuk a gitfa egyik pontjabol a masikba (a valtoztatasok megmaradnak)
+`git reset --hard` eldobja a valtozasokat
+
+##Merge vs Rebase
+gyakori `merge`-eles eseten kisebbek lesznek a `conflict`-jaim, amiket konnyebb lesz megoldani
+###merge
+strategia fuggo, hogy fog tortenni az agak osszefuzese, tobbnyire idorendben osszefuzi oket a tool
+hatrany: osszevissza lesz sok ag osszefesulese utan, hogy mi merre hogyan
+--fast-forward: idobelyeg szerinti osszefesules
+--no-ff: az eredeti elagazas utan viszi vissza a kulonbozo branch-eket. Erosen ajanlot egy rebase a merge elott. megmarad a history-ban, hogy ez egy kulon feature volt
+###mergetool
+###rebase
+a `feature` agat leveszi az eredeti helyerol, majd a cel ag vegere fuzi azokat
+###cherry-pick
+
 ##Seged
 ###.gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
 
 #Code review tools
+
+#Erdekessegek
+- ls -lR - rekurziv konyvtar listaza
+- git log --oneline - rovidebb, atlathatobb lista a logrol
