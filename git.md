@@ -66,6 +66,15 @@ apply: a legfelso / megnevezett `elem` visszaallitasa a `stash`-bol, az elem ben
 ###stash drop <name>
 torli az adott elemet a `stash`-bol
 
+##Branching
+###branch
+uj `branch` letrehozasa az aktuallis allasbol
+a nev tetszoleges lehet, konvecio szerint csak alphanumerikus ([a-zA-Z0-9])
+lehet konyvtarszerkezet szeruen is
+###checkout
+valtas az egyes branch-ek kozott
+git checkout -B <name> - uj `branch` letrehozasa, es valtas ra
+###reset
 ##Seged
 ###.gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
