@@ -102,6 +102,8 @@ remote server hozzaadasa meglevo local repohoz
 ## Seged
 ### .gitkeep
 seged fajl ahhoz, hogy ures konyvtar is belekeruljon (alapbol ures konyvtarakat nem kezel a git)
+### .gitignore
+ami itt van, azt a git figyelmen kivul fogja hagyni
 
 # Code review tools
 
